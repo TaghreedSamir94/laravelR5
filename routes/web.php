@@ -52,12 +52,26 @@ Route::prefix('cars')->group(function(){
 //      return view('test');
 // });
 
+// Route::get('taghreedForms',function(){
+//     return view('form1');
+// });
+
+// Route::post('recData',function(){
+//     return 'data received';
+// })->name('recForm1');
+/////////////////////////////////////
+
+// Route::get('test209',[Mycontroller::class,'my_data']);
+
+
+
+////////////////////////////////task///////////////////////////////
+
 Route::get('taghreedForms',function(){
     return view('form1');
 });
 
-Route::post('recData',function(){
-    return 'data received';
+Route::post('form',function(){
+    return view('formData');
 })->name('recForm1');
-/////////////////////////////////////
-Route::get('test209',[Mycontroller::class,'my_data']);
+
